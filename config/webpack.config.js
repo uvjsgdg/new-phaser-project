@@ -3,9 +3,16 @@ const srcApp = path.resolve(__dirname, '..', 'src', 'app.js');
 const distDir = path.resolve(__dirname, '..', 'dist');
 
 module.exports = (options) => {
+    // allow for things like webpack-plugin-serve/client (dev only) to be adding into the app entry
+    let appEntry = [srcApp];
+    if (options.appendAppEntry) {
+        appEntry.push(options.appendAppEntry);
+        delete options.appendAppEntry;
+    }
+
     const config = Object.assign({
         entry: {
-            app: srcApp,
+            app: appEntry,
         },
 
         output: {

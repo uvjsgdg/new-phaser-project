@@ -3,11 +3,11 @@ export default class PlayGameScene extends Phaser.Scene {
         super({ key: key });
     }
 
-    preload () {
-        // load all the resources required for this scene before using them
+    init () {
     }
 
-    init () {
+    preload () {
+        // load all the resources required for this scene before using them
     }
 
     create () {
