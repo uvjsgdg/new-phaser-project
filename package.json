@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/[account]/[project]#readme",
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.14",
     "phaser": "^3.17.0",
     "webfontloader": "^1.6.28"
   },
