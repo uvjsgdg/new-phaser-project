@@ -19,7 +19,7 @@ Supports:
 - ```make start```
 
 ## Viewing to app
-- In a browser, browse to localhost:8080. Note: if you already have a server on that port it will just increment, thanks to webpack dev server, so it might be 8081 instead.
+- In a browser, browse to 127.0.0.1:8000
 
 ## Optionally, you can install all dependancies via npm
 - ```npm install```
