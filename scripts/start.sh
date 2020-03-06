@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-node node_modules/webpack-nano/bin/wp.js --config config/webpack.config.development.js
+node node_modules/npm-run-all/bin/npm-run-all/index.js --parallel start:server start:client
